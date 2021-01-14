@@ -1,0 +1,20 @@
+import sys
+l1 = list((x for x in range(1000)))
+l2 = (x for x in range(1000))
+l3 = sorted(x for x in range(1000))
+l4 = set(x for x in range(1000))
+l5 = dict((x, x*x) for x in range(10))
+l6 = list(x*x for x in range(10))
+
+print(sys.getsizeof(l1))
+print(sys.getsizeof(l2))
+print(sys.getsizeof(l3))
+print(sys.getsizeof(l4))
+print(sys.getsizeof(l5))
+print(sys.getsizeof(l6))
+#print({x for x in range(10)})
+print(l5)
+#print({x: x*x for x in range(10)})
+print(l6)
+#print([x*x for x in range(10)])
+

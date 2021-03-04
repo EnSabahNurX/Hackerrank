@@ -3,11 +3,17 @@ class Difference:
         self.__elements = a
 
     # Add your code here
+    maximumDifference = None
     def computeDifference(self):
-        self.maximumDifference = 
+        sortedList = self.__elements
+        sortedList.sort()
+        a = sortedList[0]
+        b = sortedList[-1]
+        self.maximumDifference = b - a
+        
 # End of Difference class
 
-_ = input()
+#_ = input()
 a = [int(e) for e in input().split(' ')]
 
 d = Difference(a)

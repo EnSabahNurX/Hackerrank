@@ -2,6 +2,130 @@
 
 
 
+// function solution(list){
+//     list.sort((a, b) => a - b)
+//     let result = []
+//     let temp = []
+//     let cache = []
+//     for (let i = 0; i < list.length; i ++) {
+//         if (list[i] + 1 == list[i + 1] && list[i] + 2 == list[i + 2]) {
+//             temp = [...temp, list[i], list[i + 1], list[i + 2]]
+//         } else {
+//             temp = Array.from(new Set(temp))
+//             if (temp.length) {
+//                 cache = temp
+//             }
+//             if (temp.length >= 3) {
+//                 result = [...result, temp]
+//                 temp = []
+//             } else {
+//                     if (!cache.includes(list[i])) {
+//                         result.push(list[i])
+//                     }
+//             }
+//         }
+//     }
+//     return result.map(x => Array.isArray(x) ? [x[0], x[x.length - 1]].join('-') : String(x)).join(',')
+// 
+//     
+//         let temp = list.slice()
+//     for(let i =1; i <list.length;i++){
+//         if(list[i-1]+1 ===list[i] && list[i+1] === list[i] +1){
+//             temp[i]=""
+//         }
+//     }
+//     return temp.join().replace(/,{2,}/gm,'-')
+//     
+//     
+//     return list.map((val, idx) => list[idx - 1] === val - 1 && list[idx + 1] === val + 1 ? '' : val).join().replace(/,?(,)+/g, '-')
+//     
+//     
+//     nums = nums.map((v, i) => nums[i - 1] == v - 1 && nums[i + 1] == v + 1 ? '-' : v)
+//     return nums.filter((v, i) => v != '-' || nums[i - 1] != '-').join(',').replace(/,-,/g, '-')
+//     
+// }
+// console.log(solution([-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20])) // '-6,-3-1,3-5,7-11,14,15,17-20'
+
+
+// function saveThePrisoner(n, m, s) {
+//     return ((s - 1 + m - 1) % n) + 1
+//     return (m - 1 + s) % n || n
+// }
+// console.log(saveThePrisoner(5, 2, 1)) // 2
+// console.log(saveThePrisoner(5, 2, 2)) // 3
+// console.log(saveThePrisoner(7, 19, 2)) // 6
+// console.log(saveThePrisoner(3, 7, 3)) // 3
+// console.log(saveThePrisoner(352926151, 380324688, 94730870)) // 122129406
+// console.log(saveThePrisoner(499999999, 999999997, 2)) // 499999999
+// console.log(saveThePrisoner(499999999, 999999998, 2)) // 1
+// console.log(saveThePrisoner(999999999, 999999999, 1)) // 999999999
+
+
+// Linked list, nodes and knots
+// 
+// process.stdin.resume()
+// process.stdin.setEncoding('ascii')
+// 
+// let input_stdin = ""
+// let input_stdin_array = ""
+// let input_currentline = 0
+// 
+// process.stdin.on('data', function (data) {
+//     input_stdin += data
+// })
+// 
+// process.stdin.on('end', function () {
+//     input_stdin_array = input_stdin.split("\n")
+//     main()
+// })
+// function readLine() {
+//     return input_stdin_array[input_currentline++]
+// }
+// function Node(data){
+//     this.data=data
+//     this.next=null
+// }
+// function Solution(){
+//     
+//     this.insert=function(head,data){
+//         let temp = new Node(data)
+//         if (head == null) {
+//             return temp
+//         } else{
+//             let start = head
+//                         while (start.next) {
+//                             start = start.next
+//                         }
+//                                     start.next = temp
+//                                                 console.log(JSON.stringify(start))
+//                                                             return head
+//         }
+//     }
+//     
+//     this.display=function(head){
+//         let start=head
+//         while(start){
+//             process.stdout.write(start.data+" ")
+//             start=start.next
+//         }
+//         console.log('')
+//     }
+// }
+// function main(){
+//     let T=parseInt(readLine())
+//     let head=null
+//     let mylist=new Solution()
+//     let data = [8, 11, 2, 3, 4]
+//     for(let i of data){
+//         let data=parseInt(readLine())
+//     head=mylist.insert(head, i)
+//     }
+//     console.log(JSON.stringify(head))
+//     mylist.display(head)
+// }		
+// main()
+
+
 // function repeatedString(s, n) {
 //     if (s.length == 1 && s[0] == 'a') {
 //         return n

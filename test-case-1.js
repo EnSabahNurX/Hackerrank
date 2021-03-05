@@ -1,6 +1,58 @@
 
 
 
+// function circularArrayRotation(a, k, queries) {
+//     for (let i = 0; i < (k % a.length); i++){
+//         let at = a.pop()
+//         a.unshift(at)
+//     }
+//     return queries.reduce((arr, x) => [...arr, a[x]], [])
+// 
+//     
+//     const arr = k ? a.splice(-k % a.length).concat(a) : a
+//     return queries.map(x => arr[x])
+//         
+// 
+//     var res = []
+//     for (var q = 0; q < queries.length; q++) {
+//         var idx = (queries[q] - k) % a.length
+//                 if (idx < 0) {
+//                     idx += a.length
+//                 }
+//                 res.push(a[idx])
+//     }
+//     return res
+//     
+//     
+//     return queries.reduce((res, x) => (x - k) % a.length < 0 ? [...res, a[(x - k) % a.length + a.length]] : [...res, a[(x - k) % a.length]] , [])
+//     
+// }
+// console.log(circularArrayRotation([1, 2, 3], 2, [0, 1, 2])) // 2 3 1    [1, 2, 0]
+// console.log(circularArrayRotation([3, 4, 5], 2, [1, 2])) // 5 3            [2, 0]
+//     return ((position - 1 + times - 1) % arrayLength) + 1
+//     return arr.reduceRight((acc, val) => val === 0 ? [...acc, val] : [val, ...acc], [])
+
+
+
+// let S = 'Exception and Error  handling'
+// S = 134235
+// 
+// try {
+//     S != Number(S) && err()
+//     console.log(Number(S))
+// } 
+// catch (err) {
+//     console.log('Bad String')
+// }
+// 
+// try {
+//     num = parseInt(S) || error
+//             console.log(num)
+// }
+//     catch (error) {
+//         console.log("Bad String")
+// }
+
 
 // function solution(list){
 //     list.sort((a, b) => a - b)

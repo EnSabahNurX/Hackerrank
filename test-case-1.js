@@ -1,5 +1,72 @@
 
 
+// function jumpingOnClouds(c, k) {
+//         let e = 100
+//         let jump = 0
+//         do {
+//             if (c[jump] == 1) {
+//                 e -= 2
+//             }
+//             e--
+//             jump = (jump + k) % c.length
+//         } while (jump !== 0)
+//         return e
+// }
+// console.log(jumpingOnClouds([0, 0, 1, 0, 0, 1, 1, 0], 2)) // 92
+// console.log(jumpingOnClouds([0, 0, 1, 0], 2)) // 92
+// console.log(jumpingOnClouds([1, 1, 1, 0, 1, 1, 0, 0, 0, 0], 3)) // 80
+
+
+// let jump = 0
+//     let i = 0
+//     while (i < c.length - 1) {
+//         if (c[i + 2] == 0)  {
+//             jump++
+//             i += 2
+//         } else {
+//             jump++
+//             i += 1
+//         }
+//     }
+//     return jump
+
+
+
+
+
+// function humanReadable(seconds) {
+//     const hours = String(Math.floor(seconds / 3600)).padStart(2, 0)
+//     const mins = String(Math.floor(seconds % 3600 / 60)).padStart(2, 0)
+//     seconds = String(seconds % 60).padStart(2, 0)
+//     return `${hours}:${mins}:${seconds}`
+//     return hours + ':' + mins + ':' + seconds
+//     
+//     let pad = x => x < 10 ? "0"+x : x
+//     return pad(parseInt(seconds / (60*60))) + ":" +
+//     pad(parseInt(seconds / 60 % 60)) + ":" +
+//     pad(seconds % 60)
+//     
+// }
+// console.log(humanReadable(86399)) // '23:59:59'
+// console.log(humanReadable(60)) //  '00:01:00'
+// console.log(humanReadable(360000))
+
+
+
+// function permutationEquation(p) {
+//     let y = []
+//     for (let x = 1; x <= p.length; x++) {
+//         let px = p.indexOf(x) + 1
+//         let ppx = p.indexOf(px) + 1
+//         y.push(ppx)
+//     }
+//     return y
+//     
+//     return p.reduce((y, el, x) => [...y, p.indexOf(p.indexOf(x + 1) + 1) + 1], [])
+// }
+// console.log(permutationEquation([5, 2, 1, 3, 4])) // [4, 2, 5, 1, 3]
+// console.log(permutationEquation([4, 3, 5, 1, 2])) // [1, 3, 5, 4, 2]
+
 
 // function circularArrayRotation(a, k, queries) {
 //     for (let i = 0; i < (k % a.length); i++){
@@ -294,44 +361,6 @@
 // }
 // console.log(angryProfessor(3, [-1, -3, 4, 2]))
 // console.log(angryProfessor(2, [0, -1, 2, 1]))
-
-
-/*
-Abstract Classes
-class Book {
-    constructor(title, author) {
-        if (this.constructor === Book) {
-            throw new TypeError('Do not attempt to directly instantiate an abstract class.'); 
-        }
-                else {
-                    this.title = title;
-                    this.author = author;
-                }
-    }
-            
-                    display() {
-                        console.log('Implement the \'display\' method!')
-                    }
-}
-class MyBook extends Book {
-    
-    constructor(title, author, price){
-        super(title, author)
-        this.price = price
-    }
-              
-                            display() {
-                                console.log('Title: ' + this.title)
-                                console.log('Author: ' + this.author)
-                                console.log('Price: ' + this.price)
-                            }                      
-}
-
-let title = 'Bingo'
-let author = 'Ricardo'
-let price = 1000
-let b = new MyBook(title,author, price)
-b.display()*/
 
 
 

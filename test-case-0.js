@@ -1,22 +1,153 @@
-// Object constructor super extend inherit
-// 'use strict';
+// class Solution {
+//     constructor() {
+//         this.stack = []
+//         this.queue = []
+//     }
+//     pushCharacter(ch) {
+//         this.stack.push(ch)
+//     }
 // 
-// var _input = '';
-// var _index = 0;
-// process.stdin.on('data', (data) => { _input += data; });
+//     enqueueCharacter(ch) {
+//         this.queue.push(ch)
+//     }
+// 
+//     popCharacter() {
+//         return this.stack.pop()
+//     }
+// 
+//     dequeueCharacter() {
+//         return this.queue.shift()
+//     }
+// }
+// 
+// function main(str) {
+//     read the string s
+//     let s = readLine()
+//     let s = str
+//     let len = s.length
+//     create the Solution class object p
+//     let obj = new Solution()
+//     push/enqueue all the characters of string s to stack
+//     for (let i = 0; i < len; i++) {
+//         obj.pushCharacter(s.charAt(i))
+//         obj.enqueueCharacter(s.charAt(i))
+//     }
+// 
+//     let isPalindrome = true
+//     /*
+//      *   pop the top character from stack
+//      *   dequeue the first character from queue
+//      *   compare both the characters*/
+// 
+//     for (let i = 0; i < len / 2; i++) {
+//         if (obj.popCharacter() != obj.dequeueCharacter()) {
+//             isPalindrome = false
+//             break
+//         }
+//     }
+//     finally print whether string s is palindrome or not
+// 
+//     if (isPalindrome)
+//         console.log(`The word "${s}"  is a palindrome.`)
+//     else
+//         console.log(`The word "${s}" is not a palindrome.`)
+// }
+// main('racecar')
+// main('no I am not a palindrome')
+
+
+
+// Abstract Classes
+// class Book {
+//     constructor(title, author) {
+//         if (this.constructor === Book) {
+//             throw new TypeError('Do not attempt to directly instantiate an abstract class.')
+//         }
+//                         else {
+//                             this.title = title;
+//                             this.author = author;
+//                         }
+//     }
+//                 
+//                                     display() {
+//                                         console.log('Implement the \'display\' method!')
+//                                     }
+// }
+// class MyBook extends Book {
+//     
+//     constructor(title, author, price){
+//         super(title, author)
+//         this.price = price
+//     }
+//                   
+//                                               display() {
+//                                                   console.log('Title: ' + this.title)
+//                                                   console.log('Author: ' + this.author)
+//                                                   console.log('Price: ' + this.price)
+//                                               }                      
+// }
+// 
+// let title = 'Bingo'
+// let author = 'Ricardo'
+// let price = 1000
+// let b = new MyBook(title,author, price)
+// b.display()
+
+
+
+// class Calculator {
+//     power(n, p){
+//         if (n < 0 || p < 0) {
+//             throw 'n and p should be non-negative'
+//         } else {
+//             return Math.pow(n, p)
+//         }
+//     }
+// }
+// 
+// function main(){
+//     let myCalculator=new Calculator()
+//     let num = [
+//             [3, 5],
+//             [2, 4],
+//             [-1, -2],
+//             [-1, 3]
+//         ]
+//     for (i of num) {
+//         try{
+//             let n=parseInt(i[0])
+//             let p=parseInt(i[1])
+//             let ans=myCalculator.power(n,p)
+//             console.log(ans)
+//         }
+//         catch(e){
+//             console.log(e)
+//         }
+//     }
+// }
+// main()
+
+
+
+// Object constructor super extend inherit
+// 'use strict'
+// 
+// let _input = ''
+// let _index = 0
+// process.stdin.on('data', (data) => { _input += data; })
 // process.stdin.on('end', () => {
-//     _input = _input.split(new RegExp('[ \n]+'));
-//     main();    
-// });
-// function read() { return _input[_index++]; }
+//     _input = _input.split(new RegExp('[ \n]+'))
+//     main()
+// })
+// function read() { return _input[_index++] }
 // 
 // /**** Ignore above this line. ****/
 // 
 // class Person {
 //     constructor(firstName, lastName, identification) {
-//         this.firstName = firstName;
-//         this.lastName = lastName;
-//         this.idNumber = identification;
+//         this.firstName = firstName
+//         this.lastName = lastName
+//         this.idNumber = identification
 //     }
 //         
 //             printPerson() {
@@ -62,7 +193,7 @@
 //     let numScores = +read()
 //     let testScores = new Array(numScores)
 //     
-//     for (var i = 0; i < numScores; i++) {
+//     for (let i = 0; i < numScores; i++) {
 //         testScores[i] = +read()  
 //     }
 //     
@@ -396,10 +527,10 @@ function Person(initialAge){
 }
 
 
-var T=[-1, 10, 16, 18]
+let T=[-1, 10, 16, 18]
 for(i=0;i<T.length;i++){
-    var age=T[i]
-    var p=new Person(age)
+    let age=T[i]
+    let p=new Person(age)
     p.amIOld()
     for(j=0;j<3;j++){
         p.yearPasses()

@@ -1,5 +1,29 @@
 
 
+
+// function appendAndDelete(s, t, k) {
+//     Minimum operations to convert s to t
+//     let op = s.length + t.length
+//     If it less then possibilities just return Yes
+//     if (k > op) return 'Yes'
+//     Looping through the s or t depend which one has a shorter size until and reducing 2 operations each time (one append and one delete)
+//     for (let i = 0, l = Math.min(s.length, t.length); i < l; i++, op -= 2) {
+//         check each letter if is still equal, otherwise just stop the loop
+//         if (s[i] !== t[i]) break
+//     }
+//     check if the number of left operations is bigger than the number of possibilities
+//     also the amount must be even, because of 2 operations everytime,
+//     return op > k || (k - op) % 2 !== 0 ? 'No' : 'Yes'
+// }
+// console.log(appendAndDelete('ashley', 'ash', 2)) // No
+// console.log(appendAndDelete('abcd', 'abcdert', 10)) // No
+// console.log(appendAndDelete('zzzzz', 'zzzzzzz', 4)) // Yes
+// console.log(appendAndDelete('abc', 'def', 6)) // Yes
+// console.log(appendAndDelete('hackerhappy', 'hackerrank', 9)) // Yes
+// console.log(appendAndDelete('aba', 'aba', 7)) // Yes
+
+
+
 // function jumpingOnClouds(c, k) {
 //         let e = 100
 //         let jump = 0

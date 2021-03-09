@@ -1,5 +1,43 @@
 
 
+// function squares(a, b) {
+//     return Array(b - a + 1).fill().map((_, idx) => idx + a).filter(x => Math.sqrt(x) % 1 == 0).length
+//     return Math.floor(Math.sqrt(b)) - Math.ceil(Math.sqrt(a)) + 1
+// }
+// console.log(squares(24, 49)) // 3
+// console.log(squares(3, 9)) // 2
+// console.log(squares(17, 24)) // 0
+
+
+// function int32ToIp(int32){
+//     return int32
+//         ? (int32 >>> 0).toString(2).match(/(\d{8})/g).map(x => parseInt(x, 2)).join('.')
+//         : '0.0.0.0'
+//     
+//     return (int32>>>24) + '.' + (int32<<8>>>24) + '.' + (int32<<16>>>24) + '.' + (int32<<24>>>24)
+//         
+//     return (
+//         ((int32 >> 24) & 0xFF) + "." +
+//         ((int32 >> 16) & 0xFF) + "." +
+//         ((int32 >>  8) & 0xFF) + "." +
+//         ((int32) & 0xFF)
+//     )
+//     
+//     return [(int32 & 0xFF000000) >>> 24, 
+//         (int32 & 0x00FF0000) >>> 16,
+//         (int32 & 0x0000FF00) >>> 8,
+//         (int32 & 0x000000FF)].join('.')
+//     
+//     return [24, 16, 8, 0].map(e => int32 >> e & 255).join('.')
+//     
+//     return [int32 >>> 24, int32 >> 16 & 255, int32 >> 8 & 255, int32 & 255].join('.')
+//             
+// }
+// console.log(int32ToIp(2154959208)) // 128.114.17.104
+// console.log(int32ToIp(2149583361)) // 128.32.10.1
+// console.log(int32ToIp(0)) // 0.0.0.0
+
+
 
 // function appendAndDelete(s, t, k) {
 //     Minimum operations to convert s to t

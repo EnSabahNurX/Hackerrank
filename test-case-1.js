@@ -1,5 +1,70 @@
 
 
+
+// // Working with Big Numbers
+// function taumBday(b, w, bc, wc, z) {
+//     b = BigInt(b)
+//     w = BigInt(w)
+//     bc = BigInt(bc)
+//     wc = BigInt(wc)
+//     z = BigInt(z)
+//     let int
+//         if (bc > (wc + z)) {
+//             int = b * (wc + z) + w * wc
+//                     return BigInt(int).toString()
+//         } else if (wc > (bc + z)) {
+//             int = b * bc + w * (bc + z)
+//             return BigInt(int).toString()
+//         } else {
+//             int =  b * bc + w * wc
+//                     return int.toString()
+//         }
+// }
+// console.log(taumBday(742407782, 90529439, 847666641, 8651519, 821801924)) // 617318315833461267
+
+
+// function acmTeam(topic) {
+//     let highest = [0,0]
+//     for(let i=0; i<topic.length - 1; i++){
+//         for(let j=i+1; j<topic.length ; j++){
+//             let knownCount = 0
+//             for(let m=0; m<topic[i].length ; m++){
+//                 if(topic[i][m]|topic[j][m]){
+//                     knownCount++
+//                 }
+//             }
+//             knownCount > highest[0] ? highest = [knownCount, 1] : knownCount === highest[0] ? highest[1]++ : ''
+//         }
+//     }
+//     return highest
+//     
+//     
+//     
+// }
+// console.log(acmTeam(['10101', '11100', '11010', '00101'])) // [5, 2]
+// console.log(acmTeam(['11101', '10101', '11001', '10111', '10000', '01110'])) // [5, 6]
+
+
+
+// function equalizeArray(arr) {
+//     return new Map([...new Set(arr)].map(x => [x, arr.filter(y => y === x).length]))
+//     
+//     return arr.reduce((acc, e) => acc.set(e, (acc.get(e) || 0) + 1), new Map())
+//     
+//     return arr.length - new Object([...new Set(arr)].map(x => [x, arr.filter(y => y === x).length])).sort((a, b) => b[1] - a[1])[0][1]
+//     return arr.length - [...new Set(arr)].map(x => [x, arr.filter(y => y === x).length]).reduce((high, z) => z[1] > high[1] ? z: high, [0, 0])[1]
+//     return arr.length - [...new Set(arr)].reduce((res, x) => arr.filter(y => y === x).length > res[1] ? [x, arr.filter(y => y === x).length]: res, [0, 0])[1]
+//     return [...new Set(arr)].map(x => arr.length - arr.filter(y => y === x).length)
+//     return Math.min(...arr.map(x => arr.length - arr.filter(y => y === x).length))
+// }
+// console.log(equalizeArray([1, 2, 2, 3]))
+
+// Use map.keys() to get unique elements
+// 
+// Use map.values() to get the occurrences
+// 
+// Use map.entries() to get the pairs [element, frequency]
+
 // function squares(a, b) {
 //     return Array(b - a + 1).fill().map((_, idx) => idx + a).filter(x => Math.sqrt(x) % 1 == 0).length
 //     return Math.floor(Math.sqrt(b)) - Math.ceil(Math.sqrt(a)) + 1

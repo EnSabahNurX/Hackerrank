@@ -80,40 +80,114 @@ class BinarySearchTree {
         return node.data
     }
 
-    getHeight() {
-        const arr = JSON.stringify(this.root).match(/\d+/g).map(Number)
-        let maxHeigth = 0
+    getHeight(root = this.root) {
+        // const arr = JSON.stringify(root).match(/\d+/g).map(Number)
+        // let maxHeigth = 0
+        // if ((!root.left && !root.right) || !root) return 0
+        // for (let check of arr) {
+        //     let node = new Node(check)
+        //     let current = root
+        //     let temp = 0
+        //     while (current) {
+        //         if (node.data < current.data) {
+        //             if (!current.left) {
+        //                 temp++
+        //                 // current.left = node
+        //                 break
+        //             }
+        //             temp++
+        //             current = current.left
+        //         } else if (node.data > current.data) {
+        //             if (!current.right) {
+        //                 temp++
+        //                 // current.right = node
+        //                 break
+        //             }
+        //             temp++
+        //             current = current.right
+        //         } else {
+        //             temp++
+        //             break
+        //         }
+        //     }
+        //     if (temp > maxHeigth) {
+        //         maxHeigth = temp
+        //     }
+        // }
+        // return maxHeigth - 1
+
+
+        // var height = -1
+        // var key
+        // for (key in root) {
+        //     if (root[key] !== null) {
+        //         var depth = this.getHeight(root[key]) + 1
+        //         height = Math.max(depth, height)
+        //     }
+        // }
+        // return height
+
+
+        return (!root) ? -1 : 1 + Math.max(this.getHeight(root.left), this.getHeight(root.right))
+
+        // return (!root || (!root.left && !root.right)) ? 0 : 1 + Math.max(this.getHeight(root.left), this.getHeight(root.right))
+
+    }
+    // Traversal / Traverse
+    levelOrder(root = this.root) {
+
+        const arr = JSON.stringify(root).match(/\d+/g).map(Number)
+        let obj = {}
+        let values
+        if ((!root.left && !root.right) || !root) return 0
         for (let check of arr) {
             let node = new Node(check)
-            let current = this.root
-            let temp = 0
+            let current = root
+            let height = 0
             while (current) {
                 if (node.data < current.data) {
                     if (!current.left) {
-                        temp++
-                        // current.left = node
+                        height++
                         break
                     }
-                    temp++
+                    height++
                     current = current.left
                 } else if (node.data > current.data) {
                     if (!current.right) {
-                        temp++
-                        // current.right = node
+                        height++
                         break
                     }
-                    temp++
+                    height++
                     current = current.right
                 } else {
-                    temp++
+                    height++
                     break
                 }
             }
-            if (temp > maxHeigth) {
-                maxHeigth = temp
+            if (obj.hasOwnProperty(height)) {
+                obj[height].push(node.data)
+            } else {
+                obj[height] = [node.data]
             }
         }
-        return maxHeigth - 1
+        values = Object.keys(obj).map(x => obj[x])
+        while (values.some(element => Array.isArray(element))) values = [].concat(...values)
+        values.forEach(x => process.stdout.write(x + ' '))
+
+
+        // let queue = [root]
+        // while (queue.length > 0) {
+        //     let node = queue.shift()
+        //     process.stdout.write(node.data + " ")
+        //     if (node.left) {
+        //         queue.push(node.left)
+        //     }
+        //     if (node.right) {
+        //         queue.push(node.right)
+        //     }
+        // }
+
+
     }
 }
 
@@ -146,8 +220,9 @@ class BinarySearchTree {
     // console.log('removing 4')
     // tree.remove(4)
     //     console.log(JSON.stringify(tree))
-    console.log(tree.getHeight())
-    console.log(JSON.stringify(tree))
+    // console.log(tree.getHeight())
+    // console.log(JSON.stringify(tree))
+    tree.levelOrder()
 
 })()
 
@@ -191,39 +266,7 @@ class BinarySearchTree {
 
 //     // Start of function getHeight
 //     this.getHeight = function (root) {
-//         const arr = JSON.stringify(root).match(/\d+/g).map(Number)
-//         let maxHeigth = 0
-//         for (let check of arr) {
-//             let node = new Node(check)
-//             let current = root
-//             let temp = 0
-//             while (current) {
-//                 if (node.data < current.data) {
-//                     if (!current.left) {
-//                         temp++
-//                         // current.left = node
-//                         break
-//                     }
-//                     temp++
-//                     current = current.left
-//                 } else if (node.data > current.data) {
-//                     if (!current.right) {
-//                         temp++
-//                         // current.right = node
-//                         break
-//                     }
-//                     temp++
-//                     current = current.right
-//                 } else {
-//                     temp++
-//                     break
-//                 }
-//             }
-//             if (temp > maxHeigth) {
-//                 maxHeigth = temp
-//             }
-//         }
-//         return maxHeigth - 1
+//          return (!root) ? -1 : 1 + Math.max(this.getHeight(root.left), this.getHeight(root.right))
 //     }; // End of function getHeight
 // }; // End of function BinarySearchTree
 

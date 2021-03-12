@@ -1,84 +1,71 @@
-// Start of function Node
-function Node(data) {
-    this.data = data;
-    this.left = null;
-    this.right = null;
-}; // End of function Node
 
-// Start of function BinarySearchTree
-function BinarySearchTree() {
-    this.insert = function(root, data) {
-        if (root === null) {
-            this.root = new Node(data);
-            
-            return this.root;
-        }
-                
-                        if (data <= root.data) {
-                            if (root.left) {
-                                this.insert(root.left, data);
-                            } else {
-                                root.left = new Node(data);
-                            }
-                        } else {
-                            if (root.right) {
-                                this.insert(root.right, data);
-                            } else {
-                                root.right = new Node(data);
-                            }
-                        }
-                                
-                                        return this.root;
-    };
-    
-    // Start of function getHeight
-    this.getHeight = function(root) {
-        let leftHeight = 0
-                let rightHeight = 0
-                        let current = root
-                                while (current) {
-                                    if (root.data <= current.data) {
-                                        if (!current.left) {
-                                            current.left = root
-                                                                break
-                                        }
-                                                        leftHeight++
-                                                                        current = current.left
-                                    } else {
-                                        if (!current.right) {
-                                            current.right = root
-                                                                break
-                                        }
-                                                        rightHeight++
-                                                                        current = current.right
-                                    }
-                                }
-                                        return [leftHeight, rightHeight]
-    }; // End of function getHeight
-}; // End of function BinarySearchTree
+// // Linked list
+// function Node(data) {
+//     this.data = data;
+//     this.next = null;
+// }
+// function Solution() {
 
-process.stdin.resume();
-process.stdin.setEncoding('ascii');
+//     this.removeDuplicates = function (head) {
+//         if (head == null || head.next == null) {
+//             return head
+//         }
+//         else {
+//             let start = head
+//             let next = head
+//             let temp
+//             while (start.next) {
+//                 next = start.next
+//                 if (start.data == next.data) {
+//                     temp = JSON.parse(JSON.stringify(start.next))
+//                     start.next = temp.next
+//                 } else {
+//                     start = start.next
+//                 }
+//             }
+//         }
+//         return head
+//     }
 
-var _input = "";
+//     this.insert = function (head, data) {
+//         var p = new Node(data);
+//         if (head == null) {
+//             head = p;
+//         }
+//         else if (head.next == null) {
+//             head.next = p;
+//         }
+//         else {
+//             var start = head;
+//             while (start.next != null) {
+//                 start = start.next;
+//             }
+//             start.next = p;
+//         }
+//         return head;
 
-process.stdin.on('data', function (data) {
-    _input += data;
-});
+//     };
 
-process.stdin.on('end', function () {
-    var tree = new BinarySearchTree();
-    var root = null;
-    
-    var values = _input.split('\n').map(Number);
-    
-    for (var i = 1; i < values.length; i++) {
-        root = tree.insert(root, values[i]);
-    }
-        
-            console.log(tree.getHeight(root));
-});
+//     this.display = function (head) {
+//         var start = head;
+//         while (start) {
+//             process.stdout.write(start.data + " ");
+//             start = start.next;
+//         }
+//     };
+// }
+// function main() {
+//     let head = null
+//     let mylist = new Solution()
+//     let data = [1, 2, 2, 3, 3, 4]
+//     for (let i of data) {
+//         head = mylist.insert(head, i)
+//     }
+//     head = mylist.removeDuplicates(head);
+//     mylist.display(head);
 
+// }
+// main()
 
 
 // // Working with Big Numbers
@@ -388,18 +375,18 @@ process.stdin.on('end', function () {
 
 
 // Linked list, nodes and knots
-// 
+
 // process.stdin.resume()
 // process.stdin.setEncoding('ascii')
-// 
+
 // let input_stdin = ""
 // let input_stdin_array = ""
 // let input_currentline = 0
-// 
+
 // process.stdin.on('data', function (data) {
 //     input_stdin += data
 // })
-// 
+
 // process.stdin.on('end', function () {
 //     input_stdin_array = input_stdin.split("\n")
 //     main()
@@ -407,48 +394,48 @@ process.stdin.on('end', function () {
 // function readLine() {
 //     return input_stdin_array[input_currentline++]
 // }
-// function Node(data){
-//     this.data=data
-//     this.next=null
+// function Node(data) {
+//     this.data = data
+//     this.next = null
 // }
-// function Solution(){
-//     
-//     this.insert=function(head,data){
+// function Solution() {
+
+//     this.insert = function (head, data) {
 //         let temp = new Node(data)
 //         if (head == null) {
 //             return temp
-//         } else{
+//         } else {
 //             let start = head
-//                         while (start.next) {
-//                             start = start.next
-//                         }
-//                                     start.next = temp
-//                                                 console.log(JSON.stringify(start))
-//                                                             return head
+//             while (start.next) {
+//                 start = start.next
+//             }
+//             start.next = temp
+//             console.log(JSON.stringify(start))
+//             return head
 //         }
 //     }
-//     
-//     this.display=function(head){
-//         let start=head
-//         while(start){
-//             process.stdout.write(start.data+" ")
-//             start=start.next
+
+//     this.display = function (head) {
+//         let start = head
+//         while (start) {
+//             process.stdout.write(start.data + " ")
+//             start = start.next
 //         }
 //         console.log('')
 //     }
 // }
-// function main(){
-//     let T=parseInt(readLine())
-//     let head=null
-//     let mylist=new Solution()
+// function main() {
+//     let T = parseInt(readLine())
+//     let head = null
+//     let mylist = new Solution()
 //     let data = [8, 11, 2, 3, 4]
-//     for(let i of data){
-//         let data=parseInt(readLine())
-//     head=mylist.insert(head, i)
+//     for (let i of data) {
+//         let data = parseInt(readLine())
+//         head = mylist.insert(head, i)
 //     }
 //     console.log(JSON.stringify(head))
 //     mylist.display(head)
-// }		
+// }
 // main()
 
 

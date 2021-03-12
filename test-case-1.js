@@ -1,3 +1,15 @@
+function kaprekarNumber(p, q) {
+    let arr1 = Array(q - p + 1).fill().map((_, idx) => idx + p)
+    let arr2 = arr1.slice().map(x => ((x ** 2).toString().split('')))
+        .map(y => Number(y.slice(0, (Math.floor(y.length / 2))).join('')) + Number(y.slice(Math.floor(y.length / 2), y.length).join('')))
+    let kaprekar = arr1.filter((z, idx) => z == arr2[idx])
+    return (kaprekar.length) ? kaprekar : 'INVALID RANGE'
+
+}
+console.log(kaprekarNumber(1, 100))
+console.log(kaprekarNumber(400, 700))
+
+
 
 // // Linked list
 // function Node(data) {

@@ -1,13 +1,346 @@
-function kaprekarNumber(p, q) {
-    let arr1 = Array(q - p + 1).fill().map((_, idx) => idx + p)
-    let arr2 = arr1.slice().map(x => ((x ** 2).toString().split('')))
-        .map(y => Number(y.slice(0, (Math.floor(y.length / 2))).join('')) + Number(y.slice(Math.floor(y.length / 2), y.length).join('')))
-    let kaprekar = arr1.filter((z, idx) => z == arr2[idx])
-    return (kaprekar.length) ? kaprekar : 'INVALID RANGE'
+/*
 
+
+function stones(n, a, b) {
+    const arr = Array(n - 1).fill().map(x => [a, b])
+    function* generatePermutaion(head, ...tail) {
+        let remainder = tail.length ? generatePermutaion(...tail) : [[]];
+        for (let r of remainder) for (let h of head) yield [h, ...r];
+    }
+    let permutations = [...generatePermutaion(...arr)]
+    return [...new Set(permutations.map(item => item.reduce((sum, x) => sum + x, 0)))]
+    
+    let arrStones = []
+    for (let i = 0; i < n; i++){
+        let temp = a * ((n-1) - i) + b * i
+        arrStones[i] = temp
+    }
+    return !(a == b)
+        ? arrStones.sort((a, b) => a - b)
+        : [a * (n - 2) + b]
+    
+    return !(a == b)
+        ? Array(n).fill().map((_, idx) => idx).reduce((stones, x, i) => [...stones, a * ((n - 1) - i) + b * i], []).sort((a, b) => a - b)
+        : [a * (n - 2) + b]
 }
-console.log(kaprekarNumber(1, 100))
-console.log(kaprekarNumber(400, 700))
+console.log(stones(3, 1, 2)) // [2, 3, 4 ]
+console.log(stones(4, 10, 100)) // [30, 120, 210, 300]
+console.log(stones(58, 69, 24))
+console.log(stones(83, 86, 81))
+console.log(stones(73, 25,25))*/
+
+
+// function cavityMap(grid) {
+//     grid = grid.map(x => x.split(''))
+//     let n = grid.length
+//     for (let i = 0, j = 0; i < n && j < n; j++, (j == n) ? i++ : i, (j == n) ? j = 0 : j) {
+//         if (j == 0 || j == n - 1 || i == 0 || i == n - 1) {
+//             continue
+//         }
+//         if (grid[i][j] >  grid[i - 1][j] && grid[i][j] >   grid[i + 1][j] && grid[i][j] >  grid[i][j - 1] && grid[i][j] >  grid[i][j + 1]) {
+//             grid[i][j] = 'X'
+//         }
+//     }
+//     grid = grid.map(x => x.join(''))
+//     return grid
+// }
+// let result = cavityMap(['1112', '1912', '1892', '1234'])
+// process.stdout.write(result.join("\n") + "\n")
+
+
+// console.time()
+// function fairRations(B) {
+//     let N = B.length
+//     let count = 0
+//     for(let i = 0; i < N - 1; i++) {
+//         if (B[i] % 2 == 0) continue
+//         B[i] += 1
+//         B[i + 1] += 1
+//         count += 2
+//     }
+//     return (B[N - 1]%2) ? 'NO' : count
+//     
+//     let loaves = 0
+//     let rounds = 0
+//     let big = B.length ** 2
+//     for (let i = 0;!B.every(x => x % 2 == 0) && rounds < big; i++ % B.length) {
+//         if (i < B.length - 1 && B[i] % 2 != 0) {
+//             B[i]++
+//             B[i + 1]++
+//             loaves += 2
+//         }
+//         rounds++
+//     }
+// 
+//     for (let i = B.length - 1;!B.every(x => x % 2 == 0) && rounds < big; i-- % B.length - 1) {
+//         if (i >= 1 && B[i] % 2 != 0) {
+//             B[i]++
+//             B[i - 1]++
+//             loaves += 2
+//         }
+//             rounds++
+//     }
+// 
+//     return (rounds < big)
+//      ? loaves
+//      : 'NO'
+// }
+// console.log(fairRations([4, 5, 6, 7])) // 4
+// console.log(fairRations([1, 2])) // 'NO'
+// console.timeEnd()
+
+
+
+// function workbook(n, k, arr) {
+//     let book = {}
+//     let page = 1
+//     arr.forEach(x => {
+//         let problems = x
+//         let last = 0
+//         while (problems) {
+//             if (problems >= k) {
+//                 book[page] = Array(k).fill().map((_, idx) => idx + 1 + last)
+//                 problems -= k
+//                 last += k
+//             } else {
+//                 book[page] = Array(problems).fill().map((_, idx) => idx + 1 + last)
+//                 problems = 0
+//             }
+//             page++
+//         }
+//     })
+//     return Object.entries(book).filter(x => x[1].includes(Number(x[0]))).length
+// }
+// console.log(workbook(5, 3, [4, 2, 6, 1, 10]))
+
+
+// function libraryFine(input) {
+//     let entries = input.match(/\d+/g).map(Number)
+//     let result = 0
+//     let d1 = entries[0]
+//     let m1 = entries[1]
+//     let y1 = entries[2]
+//     let d2 = entries[3]
+//     let m2 = entries[4]
+//     let y2 = entries[5]
+//     if (y1 > y2) {
+//         result = 10000
+//     } else if (y1 == y2 && m1 > m2) {
+//         result = 500 * (m1 - m2)
+//     } else if (y1 == y2 && m1 == m2 && d1 > d2) {
+//         result = 15 * (d1 - d2)
+//     }
+//     return result
+// }
+// console.log(libraryFine('9 6 2015\n6 6 2015'))
+
+
+// function serviceLane(width, cases) {
+//     return cases.map(seg => Math.min(...width.slice(seg[0], seg[1] + 1)))
+// }
+// console.log(serviceLane([2, 3, 1, 2, 3, 2, 3, 3], [[0, 3], [4, 6], [6, 7], [3, 5], [0, 7]]))
+
+// function chocolateFeast(n, c, m) {
+//         let wrappers = Math.floor(n / c)
+//         let bars = Math.floor(n / c)
+//         while(wrappers >= m) {
+//             bars += Math.floor(wrappers / m)
+//             wrappers = Math.floor(wrappers / m) + wrappers % m
+//         }
+//         return bars
+// }
+// console.log(chocolateFeast(15, 3, 2)) // 9
+// console.log(chocolateFeast(10, 2, 5)) // 6
+// console.log(chocolateFeast(12, 4, 4)) // 3
+// console.log(chocolateFeast(6, 2, 2)) // 5
+
+
+// function howManyGames(p, d, m, s) {
+//     let games = 0
+//         while (p > m && s >= p){
+//             if (p - d > m) {
+//                 s -= p
+//                             p -= d
+//                                         games++
+//             } else {
+//                 s -= p
+//                 p = m
+//                 games++
+//             }
+//         }
+//     games += Math.floor(s / p)
+//     return games
+// }
+// console.log(howManyGames(20, 3, 6, 80)) // 6
+// console.log(howManyGames(20, 3, 6, 85)) // 7
+// console.log(howManyGames(100, 1, 1, 99)) // 0
+
+
+
+// function minimumDistances(a) {    
+//     let dict = {}
+//     a.forEach((item, idx) => dict[item] ? dict[item].push(idx) : dict[item] = [idx])
+//     let pairs= Object.keys(dict).filter(x => dict[x].length > 1)
+//     return pairs.length > 0
+//         ? Math.min(...pairs.map(y => dict[y][1] - dict[y][0]))
+//         : -1
+// }
+// console.log(minimumDistances([7, 1, 3, 4, 1, 7])) // 3
+// console.log(minimumDistances([1, 2, 3, 4, 10]))
+// 
+
+// let dict = {}
+//     text.toLowerCase().split('').forEach(item => dict[item] = dict[item] + 1 || 1)
+//     return Object.keys(dict).filter(x => dict[x] > 1).length
+
+
+
+// console.time()
+// function isPrimeBest(n) {
+//     let checks = 0
+//     // check lower boundaries on primality
+//     if (n == 2) {
+//         ++checks
+//         console.log(`Checks: ${checks}`)
+//         return true
+//     }
+//     // 1 is not prime, even numbers > 2 are not prime
+//     else if (n == 1 || !(n & 1)) {
+//         ++checks
+//         console.log(`Checks: ${checks}`)
+//         return false
+//     }
+
+//     // Check for primality using odd numbers from 3 to sqrt(n)
+//     const tam = Math.floor(Math.sqrt(n))
+//     for (let i = 3; i <= tam; i += 2) {
+//         checks++
+//         // n is not prime if it is evenly divisible by some 'i' in this range
+//         if (n % i == 0) {
+//             ++checks
+//             console.log(`Checks: ${checks}`)
+//             return false
+//         }
+//     }
+//     // n is prime
+//     ++checks
+//     console.log(`Checks: ${checks}`)
+//     return true
+// }
+// console.log(isPrimeBest(2147483647))
+// console.log(isPrimeBest(1073741831))
+// console.log(isPrimeBest(536870909))
+// console.timeEnd()
+
+
+// console.time()
+// function prime(input) {
+//     let count = 0
+//     input.match(/\d+/g).slice(1).map(Number)
+//         .map(item => (Array(Math.floor(Math.sqrt(item)) - 1).fill()
+//             .map((_, i) => 2 + i)
+//             .every(prime => (item % prime !== 0)))
+//             ? item != 1
+//                 ? console.log('Prime')
+//                 : console.log('Not prime')
+//             : console.log('Not prime')
+//         )
+//     return input.match(/\d+/g).slice(1).map(Number)
+// }
+// console.log(prime('3 2147483647 1073741831 536870909'))
+// console.timeEnd()
+
+
+// function beautifulTriplets(d, arr) {
+//     let triplets = []
+//     let len = arr.length
+//     let i = 0
+//     let j = 1
+//     let k = 2
+//     while (i <= len - 2) {
+//         if((arr[j] - arr[i] === d && arr[k] - arr[j] == d)) {
+//             triplets.push([i, j, k])
+//         }
+//         
+//         if (k < len - 1) {
+//             k++
+//         } else {
+//             if (j < len - 2) {
+//                 j++
+//                 k = j + 1
+//             } else {
+//                 i++
+//                 j = i + 1
+//                 k = j + 1 
+//             }
+//         }
+//     }
+// 
+//     for (let i=0, j=1, k=2;i<= len - 2; (k<len - 1) ? k++ : (j < len - 2) ? (j++ , k = j + 1) : (i++, j = i + 1, k = j + 1)) {
+//         if((arr[j] - arr[i] === d && arr[k] - arr[j] == d)) {
+//             triplets.push([i, j, k])
+//         }
+//     }
+//     return triplets.length
+//     
+//     let triplets = 0
+//     arr.forEach(x => (arr.includes(x + d) && arr.includes(x + (d * 2))) ? triplets++ : triplets)
+//     return triplets
+// 
+//     return arr.reduce((triplets, x) => (arr.includes(x + d) && arr.includes(x + (d * 2))) ? triplets + 1 : triplets, 0)
+//     
+//     let tam = arr[arr.length - 1]
+//     return arr.slice().filter(f => f <= (tam - (d * 2))).reduce((triplets, x) => (arr.includes(x + d) && arr.includes(x + (d * 2))) ? triplets + 1 : triplets, 0)
+// }
+// console.log(beautifulTriplets(3, [1, 2, 4, 5, 7, 8, 10]))
+// console.log(beautifulTriplets(3, [1, 6, 7, 7, 8, 10, 12, 13, 14, 19]))
+
+
+// function kaprekarNumber(p, q) {
+//     let arr1 = Array(q - p + 1).fill().map((_, idx) => idx + p)
+//     let arr2 = arr1.slice().map(x => ((x ** 2).toString().split('')))
+//         .map(y => Number(y.slice(0, (Math.floor(y.length / 2))).join('')) + Number(y.slice(Math.floor(y.length / 2), y.length).join('')))
+//     let kaprekar = arr1.filter((z, idx) => z == arr2[idx])
+//     return (kaprekar.length) ? kaprekar : 'INVALID RANGE'
+// 
+// }
+// console.log(kaprekarNumber(1, 100))
+// console.log(kaprekarNumber(400, 700))
+// 
+
+
+
+//   Dictionary sample
+// var blueCar   = {color: 'blue'};
+// var greenCar1 = {color: 'green'};
+// var redCar    = {color: 'red'};
+// var greenCar2 = {color: 'green'};
+// 
+// var cars = [blueCar, greenCar1, redCar, greenCar2]
+// 
+// var test = {};
+// 
+// cars.forEach(function(value) 
+// {
+//     var arr = [];
+//     cars.forEach(function(val) 
+//     {
+//         if(value.color === val.color) {
+//             arr.push(val);
+//         }
+//     });
+//     
+//     test[value.color] = arr;
+// })
+// 
+// console.log(test);
+// 
+// const result = {}
+// cars = 
+// cars.forEach(car => {
+//     result[car.color] = result[car.color] || []
+//       result[car.color].push(car)
+// })
 
 
 

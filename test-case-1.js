@@ -1,33 +1,33 @@
-/*
 
 
-function stones(n, a, b) {
-    const arr = Array(n - 1).fill().map(x => [a, b])
-    function* generatePermutaion(head, ...tail) {
-        let remainder = tail.length ? generatePermutaion(...tail) : [[]];
-        for (let r of remainder) for (let h of head) yield [h, ...r];
-    }
-    let permutations = [...generatePermutaion(...arr)]
-    return [...new Set(permutations.map(item => item.reduce((sum, x) => sum + x, 0)))]
-    
-    let arrStones = []
-    for (let i = 0; i < n; i++){
-        let temp = a * ((n-1) - i) + b * i
-        arrStones[i] = temp
-    }
-    return !(a == b)
-        ? arrStones.sort((a, b) => a - b)
-        : [a * (n - 2) + b]
-    
-    return !(a == b)
-        ? Array(n).fill().map((_, idx) => idx).reduce((stones, x, i) => [...stones, a * ((n - 1) - i) + b * i], []).sort((a, b) => a - b)
-        : [a * (n - 2) + b]
-}
-console.log(stones(3, 1, 2)) // [2, 3, 4 ]
-console.log(stones(4, 10, 100)) // [30, 120, 210, 300]
-console.log(stones(58, 69, 24))
-console.log(stones(83, 86, 81))
-console.log(stones(73, 25,25))*/
+
+// function stones(n, a, b) {
+    // const arr = Array(n - 1).fill().map(x => [a, b])
+    // function* generatePermutaion(head, ...tail) {
+    //     let remainder = tail.length ? generatePermutaion(...tail) : [[]];
+    //     for (let r of remainder) for (let h of head) yield [h, ...r];
+    // }
+    // let permutations = [...generatePermutaion(...arr)]
+    // return [...new Set(permutations.map(item => item.reduce((sum, x) => sum + x, 0)))]
+
+    // let arrStones = []
+    // for (let i = 0; i < n; i++) {
+    //     let temp = a * ((n - 1) - i) + b * i
+    //     arrStones[i] = temp
+    // }
+    // return !(a == b)
+    //     ? arrStones.sort((a, b) => a - b)
+    //     : [a * (n - 2) + b]
+
+    // return !(a == b)
+    //     ? Array(n).fill().map((_, idx) => idx).reduce((stones, x, i) => [...stones, a * ((n - 1) - i) + b * i], []).sort((a, b) => a - b)
+    //     : [a * (n - 2) + b]
+// }
+// console.log(stones(3, 1, 2)) // [2, 3, 4 ]
+// console.log(stones(4, 10, 100)) // [30, 120, 210, 300]
+// console.log(stones(58, 69, 24))
+// console.log(stones(83, 86, 81))
+// console.log(stones(73, 25, 25))
 
 
 // function cavityMap(grid) {

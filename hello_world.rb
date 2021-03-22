@@ -19,14 +19,14 @@
 
 # say_hello("Ricardo", "Evelane")
 
-# def calc_average(num1, num2)
-#   sum = num1 + num2
-#   avg = sum / 2.0
-#   return avg
-# end
+def calc_average(num1, num2)
+  sum = num1 + num2
+  avg = sum / 2.0
+  return avg
+end
 
-# result = calc_average(5, 10)
-# puts result + 2
+result = calc_average(5, 10)
+puts result + 2
 
 # def average_of_three(num1, num2, num3)
 #   return (num1 + num2 + num3) / 3.0

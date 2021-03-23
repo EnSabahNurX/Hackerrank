@@ -56,13 +56,45 @@
 # puts either_only(15) # => false
 # puts either_only(30) # => false
 
-def longer_string(str1, str2)
-  if str2.length > str1.length
-    return str2
-  end
-  return str1
-end
+# def longer_string(str1, str2)
+#   if str2.length > str1.length
+#     return str2
+#   end
+#   return str1
+# end
 
-puts longer_string("app", "academy") # => "academy"
-puts longer_string("summer", "fall") # => "summer"
-puts longer_string("hello", "world") # => "hello"
+# puts longer_string("app", "academy") # => "academy"
+# puts longer_string("summer", "fall") # => "summer"
+# puts longer_string("hello", "world") # => "hello"
+
+# def number_check(num)
+#   if num > 0
+#     return 'positive'
+#   elsif num < 0
+#     return 'negative'
+#   else
+#     return 'zero'
+#   end
+# end
+
+# puts number_check(5)    # => "positive"
+# puts number_check(-2)   # => "negative"
+# puts number_check(0)    # => "zero"
+
+# def repeatHello()
+#   counter = 1
+#   while counter <= 5
+#     puts "hello " + String(counter)
+#     counter += 1
+#   end
+# end
+# repeatHello()
+
+def printNums
+  i = 0
+  while i < 4
+    puts i
+    i += 1
+  end
+end
+printNums()

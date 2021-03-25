@@ -90,11 +90,26 @@
 # end
 # repeatHello()
 
-def printNums
-  i = 0
-  while i < 4
-    puts i
-    i += 1
+# def printNums
+#   i = 0
+#   while i < 4
+#     puts i
+#     i += 1
+#   end
+# end
+# printNums()
+
+def count_e(word)
+  index = word.length - 1
+  count = 0
+  while index >= 0
+    if word[index] == "e"
+      count = count + 1
+    end
+    index = index - 1
   end
+  return count
 end
-printNums()
+
+puts count_e("movie") # => 1
+puts count_e("excellent") # => 3

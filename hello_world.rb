@@ -114,15 +114,46 @@
 # puts count_e("movie") # => 1
 # puts count_e("excellent") # => 3
 
-def factorial(num)
-  fact = 1
-  while num > 0
-    fact *= num
-    num -= 1
+# def factorial(num)
+#   fact = 1
+#   while num > 0
+#     fact *= num
+#     num -= 1
+#   end
+#   return fact
+# end
+
+# puts factorial(3) # => 6, because 1 * 2 * 3 = 6
+# puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
+# puts factorial(25) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
+
+# def reverse(word)
+#   reversedWord = ""
+#   i = word.length - 1
+#   while i >= 0
+#     reversedWord += word[i]
+#     i -= 1
+#   end
+#   return reversedWord
+# end
+
+# puts reverse("cat")          # => "tac"
+# puts reverse("programming")  # => "gnimmargorp"
+# puts reverse("bootcamp")     # => "pmactoob"
+
+def is_palindrome(word)
+  i = 0
+  j = word.length - 1
+  while i < word.length
+    if word[i] != word[j]
+      return false
+    end
+    i += 1
+    j -= 1
   end
-  return fact
+  return true
 end
 
-puts factorial(3) # => 6, because 1 * 2 * 3 = 6
-puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
-puts factorial(25) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
+puts is_palindrome("racecar")  # => true
+puts is_palindrome("kayak")    # => true
+puts is_palindrome("bootcamp") # => false

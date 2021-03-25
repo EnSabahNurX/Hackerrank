@@ -99,17 +99,30 @@
 # end
 # printNums()
 
-def count_e(word)
-  index = word.length - 1
-  count = 0
-  while index >= 0
-    if word[index] == "e"
-      count = count + 1
-    end
-    index = index - 1
+# def count_e(word)
+#   index = word.length - 1
+#   count = 0
+#   while index >= 0
+#     if word[index] == "e"
+#       count = count + 1
+#     end
+#     index = index - 1
+#   end
+#   return count
+# end
+
+# puts count_e("movie") # => 1
+# puts count_e("excellent") # => 3
+
+def factorial(num)
+  fact = 1
+  while num > 0
+    fact *= num
+    num -= 1
   end
-  return count
+  return fact
 end
 
-puts count_e("movie") # => 1
-puts count_e("excellent") # => 3
+puts factorial(3) # => 6, because 1 * 2 * 3 = 6
+puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
+puts factorial(25) # => 120, because 1 * 2 * 3 * 4 * 5 = 120

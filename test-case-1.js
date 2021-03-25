@@ -1,3 +1,35 @@
+
+
+
+// Using recursion
+// function extraLongFactorials(n) {
+//     function bigFact(bigint) {
+//         bigint = BigInt(bigint)
+//         if (bigint !== 0n) {
+//             return bigint * bigFact(bigint - 1n)
+//         } else {
+//             return 1n
+//         }
+//     }
+//     console.log(bigFact(n).toString())
+// }
+
+// Best way
+// function extraLongFactorials(n) {
+//     let fact = BigInt(1)
+//     let i = BigInt(n)
+//     while (i > 0) {
+//         fact *= i
+//         i -= BigInt(1)
+//     }
+//     console.log(fact.toString())
+// }
+// extraLongFactorials(5)
+// extraLongFactorials(25)
+// extraLongFactorials(45)
+// extraLongFactorials(53)
+
+
 // function bitwiseAnd(N, K) {
 //   let max = 0
 //   for (let i = 1, j = 2; i < N; (j < N) ? j++ : (i++, j = i + 1)) {

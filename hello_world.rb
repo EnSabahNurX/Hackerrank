@@ -141,19 +141,73 @@
 # puts reverse("programming")  # => "gnimmargorp"
 # puts reverse("bootcamp")     # => "pmactoob"
 
-def is_palindrome(word)
-  i = 0
-  j = word.length - 1
-  while i < word.length
-    if word[i] != word[j]
-      return false
+# def is_palindrome(word)
+#   i = 0
+#   j = word.length - 1
+#   while i < word.length
+#     if word[i] != word[j]
+#       return false
+#     end
+#     i += 1
+#     j -= 1
+#   end
+#   return true
+# end
+#
+# puts is_palindrome("racecar")  # => true
+# puts is_palindrome("kayak")    # => true
+# puts is_palindrome("bootcamp") # => false
+
+# def factors_of(num)
+# 	factors =[]
+#   	i = 1
+#   	while i <= num
+#       if num % i == 0
+#         factors << i
+#       end
+#       i += 1
+#     end
+#   	return factors
+# end
+#
+# print factors_of(3)   # => [1, 3]
+# puts
+# print factors_of(4)   # => [1, 2, 4]
+# puts
+# print factors_of(8)   # => [1, 2, 4, 8]
+# puts
+# print factors_of(9)   # => [1, 3, 9]
+# puts
+# print factors_of(16)  # => [1, 2, 4, 8, 16]
+
+# def select_odds(numbers)
+# 	odds = []
+#   	i = 0
+#   	while i < numbers.length
+#       if numbers[i] % 2 != 0
+#         odds << numbers[i]
+#       end
+#       i += 1
+#     end
+#     return odds
+# end
+#
+# print select_odds([13, 4, 3, 7, 6, 11]) # => [13, 3, 7, 11]
+# puts
+# print select_odds([2, 4, 6])            # => []
+
+def fizz_buzz(max)
+	fizzBuzz = []
+  	i = 1
+  	while i < max
+      if (i % 4 == 0) ^ (i % 6 == 0)
+        fizzBuzz << i
+      end
+      i += 1
     end
-    i += 1
-    j -= 1
-  end
-  return true
+  	return fizzBuzz
 end
 
-puts is_palindrome("racecar")  # => true
-puts is_palindrome("kayak")    # => true
-puts is_palindrome("bootcamp") # => false
+p fizz_buzz(20) # => [4, 6, 8, 16, 18]
+
+p fizz_buzz(15) # => [4, 6, 8]

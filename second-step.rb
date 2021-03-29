@@ -32,9 +32,22 @@
 # str.reverse!
 # puts str
 
-def is_palindrome(word)
-  return word == word.reverse
-end
+# def is_palindrome(word)
+#   return word == word.reverse
+# end
+#
+# puts is_palindrome('nadan') # true
+# puts is_palindrome('hello') # false
 
-puts is_palindrome('nadan') # true
-puts is_palindrome('hello') # false
+# arr = %w[a b c d e]
+# print arr[1, 3]
+# print arr[1...3] # excluding the last element
+# print arr[1..3] # including the last element
+# puts
+# print arr[2..-1]
+# puts
+
+
+str = 'bootcamp'
+print str
+puts

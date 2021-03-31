@@ -47,7 +47,6 @@
 # print arr[2..-1]
 # puts
 
-
-str = 'bootcamp'
+str = "bootcamp"
 print str
 puts

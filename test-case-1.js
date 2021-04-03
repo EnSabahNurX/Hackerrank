@@ -1,5 +1,47 @@
 
 
+// function happyLadybugs(b) {
+
+    // if (!b.includes('_')) {
+    //     for (let i = 0; i < b.length; i++) {
+    //         if (b[i] != b[i + 1] && b[i] != b[i - 1]) {
+    //             return 'NO'
+    //         }
+    //     }
+    //     return 'YES'
+    // }
+    // let dict = {}
+    // b.split('').forEach(item => dict[item] = dict[item] + 1 || 1)
+    // return Object.keys(dict).filter(x => dict[x] == 1 && x != '_').length > 0
+    //     ? 'NO'
+    //     : 'YES'
+
+
+    // let arr = b.split('').slice()
+    // if (arr.some((val) => val == "_")) {
+    //     arr = arr.sort()
+    // }
+    // return arr.every((val, i, a) => val == "_" || (i > 0 && a[i - 1] == val) || (i < arr.length && a[i + 1] == val))
+    //     ? "YES"
+    //     : "NO"
+
+// }
+// console.log(happyLadybugs('AABBC'))
+// console.log(happyLadybugs('AABBC_C'))
+// console.log(happyLadybugs('_'))
+// console.log(happyLadybugs('DD__FQ_QQF'))
+// console.log(happyLadybugs('AABCBC'))
+// console.log(happyLadybugs('RBY_YBR'))
+// console.log(happyLadybugs('X_Y__X'))
+// console.log(happyLadybugs('__'))
+// console.log(happyLadybugs('B_RRBR'))
+// console.log(happyLadybugs('_'))
+// console.log(happyLadybugs('RBRB'))
+// console.log(happyLadybugs('RRRR'))
+// console.log(happyLadybugs('BBB'))
+// console.log(happyLadybugs('BBB_'))
+
+
 // Using recursion
 // function extraLongFactorials(n) {
 //     function bigFact(bigint) {

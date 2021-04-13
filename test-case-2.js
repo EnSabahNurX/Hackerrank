@@ -2,7 +2,7 @@
 
 
 // function notesCount(valor) {
-// let valor = parseInt(gets())
+//     valor = parseInt(gets())
 //     let notes = [[0, 100], [0, 50], [0, 20], [0, 10], [0, 5], [0, 2], [0, 1]]
 //     let rem = valor
 //     console.log(valor)

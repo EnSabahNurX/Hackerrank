@@ -1,0 +1,662 @@
+[
+	{
+		"group" : "Jazz",
+		"stations" : 
+		[
+			{
+				"name" : "Sonic Universe",
+				"url" : "http://somafm.com/sonicuniverse.pls"
+			},
+			{
+				"name" : ".977 Smooth Jazz",
+				"url" : "http://www.977music.com/itunes/jazz.pls"
+			},
+			{
+				"name" : "Joy radio",
+				"url" : "http://uk5.internet-radio.com:8174/listen.pls"
+			},
+			{
+				"name" : "Smooth Jazz Florida",
+				"url" : "http://us4.internet-radio.com:8266/listen.pls"
+			},
+			{
+				"name" : "Sonic Universe",
+				"url" : "http://somafm.com/sonicuniverse.pls"
+			}
+		]
+	},
+	{
+		"group" : "Latin",
+		"stations" : 
+		[
+			{
+				"name" : "Top Latino Radio",
+				"url" : "http://online.radiodifusion.net:8020/listen.pls"
+			},
+			{
+				"name" : "Reggaeton 24/7",
+				"url" : "http://cc.net2streams.com/tunein.php/reggaeton/playlist.pls"
+			},
+			{
+				"name" : "LA SUPER ESTRELLA SONIDERA CUMBIA",
+				"url" : "http://usa5.fastcast4u.com:16380/listen.pls"
+			},
+			{
+				"name" : "RADIO 1 MANELE ROMANIA",
+				"url" : "http://radio1manele.no-ip.org:8000/listen.pls"
+			},
+			{
+				"name" : "Radio Baladas Viejitas Bonitas",
+				"url" : "http://158.69.4.171:8230/listen.pls"
+			},
+			{
+				"name" : "Salsa Warriors",
+				"url" : "http://192.99.17.12:6031/listen.pls"
+			}
+		]
+	},
+	{
+		"group" : "Classic Rock",
+		"stations" : 
+		[
+			{
+				"name" : "181.FM Classic Hits",
+				"url" : "http://www.181.fm/winamp.pls?station=181-greatoldies&file=181-greatoldies.pls"
+			},
+			{
+				"name" : ".977 Classic Rock",
+				"url" : "http://www.977music.com/tunein/web/classicrock.asx"
+			},
+			{
+				"name" : "Covers",
+				"url" : "http://somafm.com/covers.pls"
+			},
+			{
+				"name" : "Classic Rock Planet",
+				"url" : "http://us5.internet-radio.com:8279/listen.pls"
+			},
+			{
+				"name" : "Rock Antenne",
+				"url" : "http://www.rockantenne.de/webradio/rockantenne.aac.pls"
+			}
+		]
+	},
+	{
+		"group" : "Classical",
+		"stations" : 
+		[
+			{
+				"name" : "KDFC",
+				"url" : "http://provisioning.streamtheworld.com/pls/KDFCFM.pls"
+			},
+			{
+				"name" : "Classic FM",
+				"url" : "http://media-ice.musicradio.com/ClassicFMMP3.m3u"
+			},
+			{
+				"name" : "WCPE",
+				"url" : "http://www.ibiblio.org/wcpe/wcpe.pls"
+			},
+			{
+				"name" : "CINEMIX",
+				"url" : "http://cinemix.us/cine.asx"
+			},
+			{
+				"name" : "WQXR",
+				"url" : "http://www.wqxr.org/stream/wqxr/mp3.pls"
+			},
+			{
+				"name" : "BBC Radio 3",
+				"url" : "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p"
+			},
+			{
+				"name" : "Classical 102",
+				"url" : "http://tuner.classical102.com:80"
+			},
+			{
+				"name" : "Classic FM Nederland",
+				"url" : "http://www.classicfm.nl/player/classicfm.pls"
+			},
+			{
+				"name" : "Classical Public Radio (wdav.org)",
+				"url" : "http://audio-mp3.ibiblio.org:8000/wdav-112k"
+			},
+			{
+				"name" : "Radio Classique",
+				"url" : "http://players.creacast.com/creacast/classique/playlist.pls"
+			},
+			{
+				"name" : "Radioswissclassic",
+				"url" : "http://www.radioswissclassic.ch/de/live/aacp.m3u"
+			},
+			{
+				"name" : "RNE Radio Clasica",
+				"url" : "http://radioclasica.rtveradio.cires21.com/radioclasica.mp3"
+			}
+		]
+	},
+	{
+		"group" : "Pop / Rock",
+		"stations" : 
+		[
+			{
+				"name" : "Radio Paradise",
+				"url" : "http://www.radioparadise.com/musiclinks/rp_128.m3u"
+			},
+			{
+				"name" : ".977 The Hitz Channel",
+				"url" : "http://www.977music.com/tunein/web/hitz.asx"
+			},
+			{
+				"name" : "Indie Pop Rocks!",
+				"url" : "http://somafm.com/indiepop.pls"
+			},
+			{
+				"name" : "PopTron",
+				"url" : "http://somafm.com/poptron.pls"
+			}
+		]
+	},
+	{
+		"group" : "Oldies",
+		"stations" : 
+		[
+			{
+				"name" : "ABN Antioch OTR",
+				"url" : "http://radio.macinmind.com/listen.m3u"
+			},
+			{
+				"name" : "AM600 Conyers OTR",
+				"url" : "http://www.conyersradio.net/listen.m3u"
+			},
+			{
+				"name" : "Rumsey Retro Radio",
+				"url" : "https://www.rumseyretro.ca/assets/rumseyretro.pls"
+			},
+			{
+				"name" : "WNAR-AM Radio",
+				"url" : "http://live.wnar-am.com:8500/listen.pls"
+			}
+		]
+	},
+	{
+		"group" : "Chill",
+		"stations" : 
+		[
+			{
+				"name" : "Lounge Radio",
+				"url" : "http://www.lounge-radio.com/listen128.m3u"
+			},
+			{
+				"name" : "Beat Blender",
+				"url" : "http://somafm.com/beatblender.pls"
+			},
+			{
+				"name" : "Secret Agent",
+				"url" : "http://somafm.com/secretagent.pls"
+			},
+			{
+				"name" : "Groove Salad",
+				"url" : "http://somafm.com/groovesalad.pls"
+			},
+			{
+				"name" : "Illinois Street Lounge",
+				"url" : "http://somafm.com/illstreet.pls"
+			},
+			{
+				"name" : "Hirschmilch Chillout",
+				"url" : "http://hirschmilch.de:7000/listen.pls"
+			},
+			{
+				"name" : "Prana.cr",
+				"url" : "http://144.217.203.184:9221/listen.pls"
+			},
+			{
+				"name" : "Spectrum Chillout",
+				"url" : "http://51.255.235.165:5024/listen.pls"
+			}
+		]
+	},
+	{
+		"group" : "Country",
+		"stations" : 
+		[
+			{
+				"name" : "Boot Liquor",
+				"url" : "http://somafm.com/bootliquor.pls"
+			},
+			{
+				"name" : "Highway 181",
+				"url" : "http://www.181.fm/winamp.pls?station=181-highway&file=181-highway.pls"
+			},
+			{
+				"name" : "Country 108",
+				"url" : "http://www.country108.com/listen.pls"
+			},
+			{
+				"name" : "WAMU Bluegrass Country",
+				"url" : "http://ice24.securenetsystems.net/WAMU2"
+			},
+			{
+				"name" : "Cherokee Nation Radio",
+				"url" : "http://us3.internet-radio.com:8226/live.m3u"
+			},
+			{
+				"name" : "Countrymusic24",
+				"url" : "http://91.250.77.9:9000/listen.pls"
+			},
+			{
+				"name" : "The Ranch - Classic Country",
+				"url" : "http://us3.internet-radio.com:8297/listen.pls"
+			}
+		]
+	},
+	{
+		"group" : "Techno / Electronic",
+		"stations" : 
+		[
+			{
+				"name" : "Drone Zone",
+				"url" : "http://somafm.com/dronezone.pls"
+			},
+			{
+				"name" : "Space Station Soma",
+				"url" : "http://somafm.com/spacestation.pls"
+			},
+			{
+				"name" : "cliqhop idm",
+				"url" : "http://somafm.com/cliqhop.pls"
+			},
+			{
+				"name" : "Black Rock FM",
+				"url" : "http://somafm.com/brfm.pls"
+			},
+			{
+				"name" : "New Dance Radio",
+				"url" : "http://jbstream.net/tunein.php/blackoutworm/playlist.asx"
+			},
+			{
+				"name" : "DubStep Beyond",
+				"url" : "http://somafm.com/play/dubstep32"
+			},
+			{
+				"name" : "DI Radio Digital Impulse - Techno",
+				"url" : "http://5.39.71.159:8938/listen.pls"
+			},
+			{
+				"name" : "ELECTRONIC MUSIC NEVER DIES",
+				"url" : "http://uk1.internet-radio.com:8247/listen.pls"
+			},
+			{
+				"name" : "Minimal Mix Radio Stream",
+				"url" : "http://5.39.71.159:8750/listen.pls"
+			}
+		]
+	},
+	{
+		"group" : "Community",
+		"stations" : 
+		[
+			{
+				"name" : "Jupiter Broadcasting",
+				"url" : "http://jblive.stream/"
+			}
+		]
+	},
+	{
+		"group" : "root",
+		"stations" : []
+	},
+	{
+		"group" : "Dance",
+		"stations" : 
+		[
+			{
+				"name" : "Dance UK Radio",
+				"url" : "http://uk2.internet-radio.com:8024/listen.pls"
+			},
+			{
+				"name" : "Ibiza Lockdown Radio",
+				"url" : "http://uk3.internet-radio.com:8218/live.m3u"
+			},
+			{
+				"name" : "New Dance Radio",
+				"url" : "http://jbstream.net/tunein.php/blackoutworm/playlist.asx"
+			},
+			{
+				"name" : "Real Dance Radio",
+				"url" : "http://uk6.internet-radio.com:8096/live.m3u"
+			}
+		]
+	},
+	{
+		"group" : "Instrumental",
+		"stations" : 
+		[
+			{
+				"name" : "Fm Serena - Musica del alma",
+				"url" : "http://198.50.206.239:8226/listen.pls"
+			},
+			{
+				"name" : "Instrumental Radio",
+				"url" : "http://178.32.62.163:8599/listen.pls"
+			},
+			{
+				"name" : "LEAL Stream",
+				"url" : "http://163.172.198.16:8366/listen.pls"
+			}
+		]
+	},
+	{
+		"group" : "Soundtracks",
+		"stations" : 
+		[
+			{
+				"name" : "Classic FM soundtracks",
+				"url" : "http://www.classicfm.nl/player/classicfm-soundtracks.pls"
+			},
+			{
+				"name" : "Radio Domeldo Movie",
+				"url" : "http://185.105.4.53:3006/listen.pls"
+			},
+			{
+				"name" : "Tune Disney Radio",
+				"url" : "http://162.244.80.106:8108/listen.pls"
+			}
+		]
+	},
+	{
+		"group" : "Romantic",
+		"stations" : 
+		[
+			{
+				"name" : "Heartbeat FM",
+				"url" : "http://176.9.184.196:8010/listen.pls"
+			},
+			{
+				"name" : "Radio Best Romantic",
+				"url" : "http://89.39.189.2:8877/listen.pls"
+			},
+			{
+				"name" : "ROMANTIC MUSIC (radio.musicdays.pl)",
+				"url" : "http://145.239.26.146:7286/listen.pls"
+			}
+		]
+	},
+	{
+		"group" : "Reggae",
+		"stations" : 
+		[
+			{
+				"name" : "FM Jamaica",
+				"url" : "http://us5.internet-radio.com:8487/listen.pls"
+			},
+			{
+				"name" : "Mighty General (MG)",
+				"url" : "http://us3.internet-radio.com:8120/live.m3u"
+			},
+			{
+				"name" : "Party Vibe: Reggae",
+				"url" : "http://www.partyviberadio.com:8000/listen.pls"
+			}
+		]
+	},
+	{
+		"group" : "Blues",
+		"stations" : 
+		[
+			{
+				"name" : "Austin Blues Radio",
+				"url" : "http://ca10.rcast.net:8036/listen.pls"
+			},
+			{
+				"name" : "Majestic Jukebox Radio",
+				"url" : "http://uk3.internet-radio.com:8405/live.m3u"
+			},
+			{
+				"name" : "TOPBLUES",
+				"url" : "http://us3.internet-radio.com:8342/listen.pls"
+			}
+		]
+	},
+	{
+		"group" : "Polskie",
+		"stations" : 
+		[
+			{
+				"name" : "AntyRadio",
+				"url" : "http://ant-waw-01.cdn.eurozet.pl:8602/listen.pls"
+			},
+			{
+				"name" : "Eska",
+				"url" : "http://waw02-03.ic.smcdn.pl:8000/t042-1.mp3.m3u"
+			},
+			{
+				"name" : "Eska Rock",
+				"url" : "http://waw02-03.ic.smcdn.pl:8000/t041-1.mp3.m3u"
+			},
+			{
+				"name" : "Kolor",
+				"url" : "http://stream4.nadaje.com:15358/radiokolor.m3u"
+			},
+			{
+				"name" : "Maryja",
+				"url" : "http://www.radiostacje.com/shortcuts/radiomaryja.pls"
+			},
+			{
+				"name" : "MeloRadio",
+				"url" : "http://mel0101.cdn.eurozet.pl:8800/mel-net.mp3.m3u"
+			},
+			{
+				"name" : "Muzo.fm",
+				"url" : "http://stream4.nadaje.com:8002/muzo.m3u"
+			},
+			{
+				"name" : "Plus",
+				"url" : "http://plu-waw.cdn.eurozet.pl:8318/listen.pls"
+			},
+			{
+				"name" : "Polskie Radio 1",
+				"url" : "http://stream3.polskieradio.pl:8900/listen.pls"
+			},
+			{
+				"name" : "Polskie Radio 2",
+				"url" : "http://stream3.polskieradio.pl:8902/listen.pls"
+			},
+			{
+				"name" : "Polskie Radio 3",
+				"url" : "http://stream3.polskieradio.pl:8904/listen.pls"
+			},
+			{
+				"name" : "Polskie Radio 4",
+				"url" : "http://stream3.polskieradio.pl:8906/listen.pls"
+			},
+			{
+				"name" : "Polskie Radio 24",
+				"url" : "=http://stream3.polskieradio.pl:8080/listen.pls"
+			},
+			{
+				"name" : "Polskie Radio Chopin",
+				"url" : "http://stream3.polskieradio.pl:8910/listen.pls"
+			},
+			{
+				"name" : "Pogoda",
+				"url" : "http://stream13.radioagora.pl/tuba38-1.mp3.m3u"
+			},
+			{
+				"name" : "Radio Dla Ciebie",
+				"url" : "http://www.rdc.pl/rdc.m3u"
+			},
+			{
+				"name" : "Radio Dzieciom",
+				"url" : "http://stream3.polskieradio.pl:8916/listen.pls"
+			},
+			{
+				"name" : "Radio Plus",
+				"url" : "http://waw02-03.ic.smcdn.pl:8000/t051-1.mp3.m3u"
+			},
+			{
+				"name" : "RMF",
+				"url" : "http://www.rmfon.pl/n/rmffm.pls"
+			},
+			{
+				"name" : "RMF Classic",
+				"url" : "http://www.rmfon.pl/n/rmfclassic.pls"
+			},
+			{
+				"name" : "RMF Maxxx",
+				"url" : "http://www.rmfon.pl/n/rmfmaxxx.pls"
+			},
+			{
+				"name" : "RMF Smooth Jazz",
+				"url" : "http://www.rmfon.pl/n/rmfsmoothjazz.pls"
+			},
+			{
+				"name" : "Rock Radio",
+				"url" : "http://stream.radioagora.pl/tuba9006-1.mp3.m3u"
+			},
+			{
+				"name" : "Roxy",
+				"url" : "http://poznan6.radio.pionier.net.pl:8000/roxyfm.ogg"
+			},
+			{
+				"name" : "Silesia",
+				"url" : "http://silesia.fm/radiosilesia.m3u"
+			},
+			{
+				"name" : "Tok FM",
+				"url" : "http://stream.radioagora.pl/tuba10-1.mp3.m3u"
+			},
+			{
+				"name" : "VOX FM",
+				"url" : "http://waw02-03.ic.smcdn.pl:8000/t049-1.mp3.m3u"
+			},
+			{
+				"name" : "WAWA",
+				"url" : "http://waw02-03.ic.smcdn.pl:8000/t050-1.mp3.m3u"
+			},
+			{
+				"name" : "Wnet",
+				"url" : "http://audio.radiownet.pl:8000/stream.m3u"
+			},
+			{
+				"name" : "ZET",
+				"url" : "http://zet-net-01.cdn.eurozet.pl:8400/listen.pls"
+			},
+			{
+				"name" : "ZET Chilli",
+				"url" : "http://chi-net-01.cdn.eurozet.pl:8900/listen.pls"
+			},
+			{
+				"name" : "Z\u0142ote Przeboje",
+				"url" : "http://stream.radioagora.pl/tuba8936-1.mp3.m3u"
+			}
+		]
+	},
+	{
+		"group" : "Espanol",
+		"stations" : 
+		[
+			{
+				"name" : "RNE Radio Exterior",
+				"url" : "http://radioexterior.rtveradio.cires21.com/radioexterior.mp3"
+			},
+			{
+				"name" : "RNE Radio 5",
+				"url" : "http://radio5.rtveradio.cires21.com/radio5.mp3"
+			},
+			{
+				"name" : "Onda Cero",
+				"url" : "http://icecast-streaming.nice264.com/ondacero"
+			},
+			{
+				"name" : "RFI",
+				"url" : "http://live02.rfi.fr/rfienespagnol-64.mp3"
+			}
+		]
+	},
+	{
+		"group" : "English",
+		"stations" : 
+		[
+			{
+				"name" : "BBC World Service",
+				"url" : "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk"
+			},
+			{
+				"name" : "NPR (US)",
+				"url" : "http://www.npr.org/streams/mp3/nprlive24.m3u"
+			},
+			{
+				"name" : "RFI",
+				"url" : "http://live02.rfi.fr/rfienanglais-64.mp3"
+			},
+			{
+				"name" : "LBC London",
+				"url" : "http://media-the.musicradio.com/LBCLondon"
+			}
+		]
+	},
+	{
+		"group" : "Austria",
+		"stations" : 
+		[
+			{
+				"name" : "98.3 Superfly",
+				"url" : "http://stream01.superfly.fm:8080/live128"
+			},
+			{
+				"name" : "Antenne Steiermark",
+				"url" : "http://live.antenne.at/as"
+			},
+			{
+				"name" : "Austrian Rock Radio",
+				"url" : "http://live.antenne.at/arr"
+			},
+			{
+				"name" : "Kronehit Black",
+				"url" : "http://onair-ha1.krone.at/kronehit-black.mp3"
+			},
+			{
+				"name" : "Kronehit Charts",
+				"url" : "http://onair.krone.at/kronehit-charts.mp3"
+			},
+			{
+				"name" : "KroneHit",
+				"url" : "http://onair-ha1.krone.at/kronehit-hp.mp3"
+			},
+			{
+				"name" : "KroneHit UK Charts",
+				"url" : "http://onair-ha1.krone.at/kronehit-ukcharts.mp3"
+			},
+			{
+				"name" : "KroneHit US Charts",
+				"url" : "http://onair-ha1.krone.at/kronehit-uscharts.mp3"
+			},
+			{
+				"name" : "Life Radio",
+				"url" : "http://94.136.28.10:8000/liferadio"
+			},
+			{
+				"name" : "Radio Arabella Austropop",
+				"url" : "http://arabella.stream.kapper.net:8005/arabellaaustropop"
+			},
+			{
+				"name" : "Radio Arabella Wien Live",
+				"url" : "http://arabella.stream.kapper.net:8000/arabellavie"
+			},
+			{
+				"name" : "Radio Austria",
+				"url" : "http://streamplus14.leonex.de:24954/;stream.nsv"
+			},
+			{
+				"name" : "Radio FRO Stream - 105.0 MHz",
+				"url" : "http://www.fro.at:8008/fro64.mp3"
+			},
+			{
+				"name" : "VIENNA.AT Top 40",
+				"url" : "http://webradio.vienna.at:80/vie-top40"
+			}
+		]
+	}
+]

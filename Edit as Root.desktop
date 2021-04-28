@@ -15,5 +15,5 @@ Profiles=profile-zero;
 
 [X-Action-Profile profile-zero]
 MimeTypes=text/*;application/*;
-Exec=gksu mousepad %f
+Exec=gksu leafpad %f
 Name=Default profile

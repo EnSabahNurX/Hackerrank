@@ -39,7 +39,7 @@ row_and_column = [(x, y) if y % 2 == 0 else f'({x},{y}) y is not even' for x in 
 row_and_column = [(x, y) if y % 2 == 0 else (x, y ** x)
                   for x in range(1, 11) for y in range(1, 6)]
 
-#print(row_and_column)
+# print(row_and_column)
 
 string = 'Ricardo Almeida'
 new_string = [letter for letter in string]
@@ -54,22 +54,22 @@ new_string = [string[index:index + 2] for index in range(0, len(string), 2)]
 slice_number = 3
 new_string = [string[index:index + slice_number]
               for index in range(0, len(string), slice_number)]
-#print(new_string)
+# print(new_string)
 
 
 slice_number = 5
 new_string = '.'.join([string[index:index + slice_number].strip()
-              for index in range(0, len(string), slice_number)])
-#print(new_string)
+                       for index in range(0, len(string), slice_number)])
+# print(new_string)
 
 
 names = ['Luiz', 'Mary', 'Helena', 'John', 'Felicia']
 new_names = [name.title() for name in names]
-#print(new_names)
+# print(new_names)
 
 names = ['Luiz', 'Mary', 'Helena', 'John', 'Felicia']
 new_names = [f'{name[:-1].lower()}{name[-1].upper()}' for name in names]
-#print(new_names)
+# print(new_names)
 
 numbers = [[n, n ** 2] for n in range(10)]
 flat = [y for x in numbers for y in x]
